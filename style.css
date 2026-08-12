@@ -188,3 +188,70 @@ footer{
     object-fit:cover;
     border:5px solid #00bcd4;
 }
+#reviews{
+    padding: 80px 20px;
+    background: #f5f7fa;
+}
+
+#reviews h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #0a192f;
+}
+
+.review-form{
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.review-form textarea{
+    min-height: 140px;
+}
+
+.review-form button{
+    width: 100%;
+    padding: 15px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.review-form button:hover{
+    background: #0097a7;
+}
+.whatsapp-btn{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(37,211,102,0.4);
+}
