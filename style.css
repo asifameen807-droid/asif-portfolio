@@ -5002,3 +5002,269 @@ nav ul li a.active {
     }
 
 }
+/* ================= CERTIFICATES ================= */
+
+.certificates-section {
+    padding: 100px 8%;
+    background: linear-gradient(135deg, #f8fbff, #eef5ff);
+    position: relative;
+    overflow: hidden;
+}
+
+.certificates-section::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(0, 123, 255, 0.06);
+    top: -150px;
+    right: -100px;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-heading span {
+    display: inline-block;
+    color: #007bff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 42px;
+    color: #172033;
+    font-weight: 700;
+}
+
+.section-heading h2 strong {
+    color: #007bff;
+}
+
+.section-heading p {
+    margin-top: 15px;
+    color: #667085;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+
+/* GRID */
+
+.certificates-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* CARD */
+
+.certificate-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 123, 255, 0.08);
+    border-radius: 24px;
+    padding: 30px;
+    display: flex;
+    gap: 24px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(20, 45, 80, 0.08);
+    transition: all 0.35s ease;
+}
+
+.certificate-card::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(0, 123, 255, 0.04);
+    right: -30px;
+    bottom: -30px;
+}
+
+.certificate-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(20, 45, 80, 0.14);
+    border-color: rgba(0, 123, 255, 0.2);
+}
+
+
+/* ICON */
+
+.certificate-icon {
+    min-width: 65px;
+    height: 65px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #007bff, #00a8ff);
+    color: white;
+    font-size: 25px;
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.22);
+}
+
+.certificate-content {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* NUMBER */
+
+.certificate-number {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #dfeeff;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+
+/* TITLE */
+
+.certificate-content h3 {
+    margin: 0 45px 8px 0;
+    font-size: 19px;
+    line-height: 1.4;
+    color: #172033;
+}
+
+.certificate-provider {
+    margin: 0 0 12px;
+    color: #007bff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.certificate-description {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+/* FOOTER */
+
+.certificate-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.certificate-footer > span {
+    color: #98a2b3;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.certificate-footer > span i {
+    color: #007bff;
+    margin-right: 5px;
+}
+
+
+/* BUTTON */
+
+.certificate-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 15px;
+    border-radius: 50px;
+    background: #edf6ff;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.certificate-btn:hover {
+    background: #007bff;
+    color: white;
+    transform: translateX(3px);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .certificates-section {
+        padding: 75px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .certificates-section {
+        padding: 65px 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+    .certificate-card {
+        padding: 22px;
+        gap: 16px;
+        border-radius: 20px;
+    }
+
+    .certificate-icon {
+        min-width: 52px;
+        height: 52px;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+
+    .certificate-content h3 {
+        font-size: 17px;
+    }
+
+    .certificate-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .certificate-btn {
+        width: fit-content;
+    }
+}
